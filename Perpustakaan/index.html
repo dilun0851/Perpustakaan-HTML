@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code F - Login</title>
+    <link rel="stylesheet" href="style index.css"> <!-- Corrected stylesheet link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="overlay"></div>
+    <form action="index.html" method="post" class="box">
+        <div class="header">
+            <h3>Masuk ke akun Anda</h3>
+        </div>
+        <div class="login-area">
+            <input type="text" id="username" class="username" placeholder="Username">
+            <input type="password" id="password" class="password" placeholder="Password">
+            <button type="button" class="submit" onclick="login('admin')">Login Admin</button> <!-- Pass 'user' as the role -->
+            <button type="button" class="submit" onclick="login('user')">Login</button> <!-- Pass 'user' as the role -->
+
+            <a href="#"><li>Forget Password</li></a> <!-- This line was corrected -->
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

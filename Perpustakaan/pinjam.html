@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peminjaman Buku</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Peminjaman Buku</h1>
+        <div id="qrcode"></div>
+        <form id="bookForm">
+            <label for="bookTitle">Judul Buku:</label>
+            <input type="text" id="bookTitle" required>
+            
+            <label for="borrowerName">Nama Peminjam:</label>
+            <input type="text" id="borrowerName" required>
+            
+            <label for="Tanggalpinjam">Tanggal Pinjam:</label>
+            <input type="date" id="Tanggalpinjam" required>
+            
+            <label for="Tanggalkembali">Tanggal Pengembalian:</label>
+            <input type="date" id="Tanggalkembali" required>
+            
+            <button type="button" onclick="borrowBook()">Pinjam Buku</button>
+        </form>
+        <div id="borrowedBooks"></div>
+    </div>
+    <script src="script.js"></script>
+    <script src="qrcode.min.js"></script>
+</body>
+</html>
